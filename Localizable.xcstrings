@@ -1,0 +1,68 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "API Key Settings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API Key Einstellungen"
+          }
+        }
+      }
+    },
+    "Current Pin" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktueller Pin"
+          }
+        }
+      }
+    },
+    "Read Image Description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildbeschreibung Vorlesen"
+          }
+        }
+      }
+    },
+    "The live video being streamed from SpatialContinutiyCamera" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Liveübertragung von der Sptial Continuity Kamera"
+          }
+        }
+      }
+    },
+    "The static pin received from SpatialContinuityCamera" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der statische Pin von der Spatial Continuity Kamera"
+          }
+        }
+      }
+    },
+    "Your pin will appear here." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pin erscheint hier"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,1 @@
+The video streaming code in `SpatialContinuityShared` is based on the [LocalVideoStreaming](https://github.com/finnvoor/LocalVideoStreaming) package by @finnvoor, which was released under the CC0 license.
