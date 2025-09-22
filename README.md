@@ -1,0 +1,47 @@
+<!--
+
+This source file is part of the Spatial Continuity project
+
+SPDX-FileCopyrightText: 2024 Paul Heidekrüger
+
+SPDX-License-Identifier: MIT
+
+-->
+
+# Spatial Continuity
+
+
+## Overview
+
+This repository contains a implementation of _Spatial Continuity_.
+_Spatial Continuity_ is a novel concept that proposes a combination of spatial computing and large language models (LLM) to provide seamless transitions between virtual and real-world contexts for making the world more accessible to users with low vision.
+Ultimately, this should lead to a truly continuous experience where the friction that accessible technologies introduce, e.g., by setup and positioning, is fully removed. 
+
+This implementation is part of our work on the "Spatial Continuity: Investigating Use Cases of Spatial Computing for Users with Low Vision" poster, which was accepted at the [27th International ACM SIGACCESS Conference on Computers and Accessibility](https://assets25.sigaccess.org/).
+
+
+## Functionality
+
+The current prototype implementation of _Spatial Continuity_ consists of two apps: the Spatial Continuity app on Vision Pro and the Spatial Continuity Camera app on iPhone.
+
+The Spatial Continuity Camera app functions as a hand-held magnifying glass.
+After connecting, it streams the camera feed from the iPhone to the Spatial Continuity Camera app running on Vision Pro.
+
+The Spatial Continuity Camera app can open screenshots from the camera livestream in a separate window for further inspection. 
+If an OpenAI API key is provided, spoken image descriptions will be generated as well. 
+
+
+## Setup and Usage
+
+1. Upon opening the Spatial Continuity app for the first time, you will be presented with the [SpeziLLM](https://github.com/StanfordSpezi/SpeziLLM) onboarding window where you may enter your OpenAI API key. An OpenAI API key is required for generating spoken image descriptions.
+2. Ensure that both your iPhone and Vision Pro are on the same network. When opening the Spatial Continuity Camera app on iPhone, the connection should be established automatically.
+
+
+## Known Issues
+
+* Connecting the Spatial Continuity and Spatial Continuity Camera apps may be unreliable at times. Suggestions and PRs welcome! 
+
+
+## Contributors
+
+You can find a list of contributors in the [CONTRIBUTORS.md](/CONTRIBUTORS.md) file.
