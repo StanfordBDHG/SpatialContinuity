@@ -1,3 +1,13 @@
+<!--
+
+This source file is part of the Spatial Continuity project
+
+SPDX-FileCopyrightText: 2025 Paul Heidekrüger
+
+SPDX-License-Identifier: MIT
+
+-->
+
 Spatial Continuity Contributors
 ===============================
 
