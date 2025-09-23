@@ -6,8 +6,8 @@
 // SPDX-License-Identifier: MIT
 //
 
-import SwiftUI
 @_exported import SpatialContinuityShared
+import SwiftUI
 
 @main
 struct SpatialContinuityCameraApp: App {

@@ -24,11 +24,11 @@ class SCCModel: ObservableObject {
         Task {
             await handleSCCPhotoStream()
         }
-        
+
         Task {
             await handleSCCVideoStream()
         }
-        
+
         networking.startAdvertising()
     }
 
@@ -49,7 +49,7 @@ class SCCModel: ObservableObject {
             // peerConn.sendImage(data: photoFromStream.fileDataRepresentation())
         }
     }
-    
+
     func handleSCCVideoStream() async {
         for await buffer in scc.videoStream {
             networking.send(buffer)

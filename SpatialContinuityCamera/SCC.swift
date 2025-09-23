@@ -8,8 +8,8 @@
 
 import AVFoundation
 import CoreImage
-import UIKit
 import SwiftUI
+import UIKit
 
 // References:
 // * https://developer.apple.com/tutorials/sample-apps/capturingphotos-camerapreview
@@ -51,7 +51,7 @@ public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
             continuation.yield(photo)
         }
     }
-    
+
     lazy var videoStream: AsyncStream<CVPixelBuffer> = AsyncStream { continuation in
         addToVideoStream = { buffer in
             continuation.yield(buffer)
@@ -78,7 +78,7 @@ public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         }
     }
 
-    func setupCamera() {
+    private func checkCameraAuthorization() -> Bool {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .authorized:
             break
@@ -93,6 +93,14 @@ public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         default:
             setupResult = .unconfigured
             print("No camera access")
+            return false
+        }
+
+        return true
+    }
+
+    func setupCamera() {
+        if !checkCameraAuthorization() {
             return
         }
 
@@ -100,7 +108,7 @@ public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
 
         self.videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
 
-        guard let videoDevice = self.videoDevice else {
+        guard let videoDevice else {
             print("Couldn't select capture device")
             setupResult = .unconfigured
             return

@@ -61,7 +61,7 @@ extension SCCPeerConnection: MCNearbyServiceAdvertiserDelegate {
         withContext _: Data?,
         invitationHandler: @escaping (Bool, MCSession?) -> Void
     ) {
-        // FIXME: We unconditonally accept connections
+        // HACK: We unconditonally accept connections
         print("Peer invitiaton received from \(peerID)")
         invitationHandler(true, mcSession)
     }

@@ -37,13 +37,17 @@ import Network
     }
 
     public func startBrowsing(for serviceType: String) {
-        guard browser?.state != .ready else { return }
+        guard browser?.state != .ready else {
+            return
+        }
         print("Starting browsing")
         browser?.cancel()
         browser = NWBrowser(for: .bonjour(type: serviceType, domain: nil), using: .castaway)
         browser?.stateUpdateHandler = { [weak self] state in
             print("Browser chaged to state: \(state)")
-            guard let self else { return }
+            guard let self else {
+                return
+            }
             switch state {
             case .ready:
                 browserResultsFound(browser?.browseResults ?? [])
@@ -62,7 +66,9 @@ import Network
     }
 
     public func startListening(for serviceType: String) {
-        guard listener?.state != .ready else { return }
+        guard listener?.state != .ready else {
+            return
+        }
         print("Starting listening")
         listener?.cancel()
         listener = try? NWListener(
@@ -70,7 +76,9 @@ import Network
             using: .castaway
         )
         listener?.stateUpdateHandler = { [weak self] state in
-            guard let self else { return }
+            guard let self else {
+                return
+            }
             print("Listener chaged to state: \(state)")
             switch state {
             case let .failed(error):
@@ -82,7 +90,9 @@ import Network
             }
         }
         listener?.newConnectionHandler = { [weak self] connection in
-            guard self?.connection?.state != .ready else { return }
+            guard self?.connection?.state != .ready else {
+                return
+            }
             self?.startConnection(connection)
         }
         listener?.start(queue: listenerQueue)
@@ -93,11 +103,13 @@ import Network
     }
 
     public func send(data: Data, messageType: MessageType) async throws {
-        guard let connection else { return }
+        guard let connection else {
+            return
+        }
 
         let message = NWProtocolFramer.Message(messageType: messageType)
         let contentContext = NWConnection.ContentContext(identifier: "message", metadata: [message])
-        
+
         try await withCheckedThrowingContinuation { continuation in
             connection.send(
                 content: data,
@@ -138,7 +150,9 @@ import Network
         for result in results {
             print("Found endpoint \(result.endpoint) on interfaces: \(result.interfaces)")
         }
-        guard let result = results.first, connection?.state != .ready else { return }
+        guard let result = results.first, connection?.state != .ready else {
+            return
+        }
         let connection = NWConnection(to: result.endpoint, using: .castaway)
         startConnection(connection)
     }
@@ -164,10 +178,14 @@ import Network
     }
 
     private func receiveMessage() {
-        guard let connection else { return }
+        guard let connection else {
+            return
+        }
 
         connection.receiveMessage { [weak self] content, contentContext, _, error in
-            guard let self else { return }
+            guard let self else {
+                return
+            }
             guard !(contentContext?.isFinal ?? true) else {
                 self.connection?.cancel()
                 return

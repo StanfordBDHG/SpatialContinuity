@@ -14,13 +14,14 @@ let package = Package(
     name: "SpatialContinuityShared",
     platforms: [
         .iOS(.v17),
-        .visionOS(.v1),
+        .visionOS(.v1)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SpatialContinuityShared",
-            targets: ["SpatialContinuityShared"]),
+            targets: ["SpatialContinuityShared"]
+        )
     ],
     dependencies: [
         .package(url: "https://github.com/finnvoor/Transcoding", .upToNextMajor(from: "0.0.1"))

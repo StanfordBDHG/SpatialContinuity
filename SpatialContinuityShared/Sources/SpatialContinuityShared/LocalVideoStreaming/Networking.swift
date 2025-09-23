@@ -17,7 +17,7 @@ import Transcoding
 @Observable public final class Networking: NSObject {
     // MARK: Lifecycle
 
-    public override init() {
+    override public init() {
         super.init()
 
         videoEncoderTask = Task {
@@ -72,7 +72,9 @@ import Transcoding
     }
 
     public func send(_ pixelBuffer: CVPixelBuffer) {
-        guard isConnected else { return }
+        guard isConnected else {
+            return
+        }
         videoEncoder.encode(pixelBuffer)
     }
 

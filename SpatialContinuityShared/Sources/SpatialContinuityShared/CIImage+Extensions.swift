@@ -11,7 +11,7 @@ import UIKit
 
 // Verbatim from https://developer.apple.com/tutorials/sample-apps/capturingphotos-camerapreview
 extension CIImage {
-    public var image: Image? {
+    var image: Image? {
         let ciContext = CIContext()
         guard let cgImage = ciContext.createCGImage(self, from: extent) else {
             return nil
@@ -19,7 +19,7 @@ extension CIImage {
         return Image(decorative: cgImage, scale: 1, orientation: .up)
     }
 
-    public var uiImage: UIImage? {
+    var uiImage: UIImage? {
         let ciContext = CIContext()
         guard let cgImage = ciContext.createCGImage(self, from: extent) else {
             return nil
@@ -27,4 +27,3 @@ extension CIImage {
         return UIImage(cgImage: cgImage)
     }
 }
-

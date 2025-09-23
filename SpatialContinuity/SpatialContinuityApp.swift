@@ -25,9 +25,9 @@ struct SpatialContinuityApp: App {
             ZStack {
                 if completedOnboardingFlow {
                     LiveVideoView(currentFrame: $model.currentFrame)
-                    .onDisappear {
-                        dismissWindow(id: "currentPin")
-                    }
+                        .onDisappear {
+                            dismissWindow(id: "currentPin")
+                        }
                 } else {
                     EmptyView()
                 }

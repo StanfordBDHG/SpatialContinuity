@@ -10,10 +10,10 @@ import SwiftUI
 
 struct LiveVideoView: View {
     @Binding var currentFrame: UIImage?
-        
+
     var body: some View {
         GeometryReader { geometry in
-            if let currentFrame = currentFrame {
+            if let currentFrame {
                 Image(uiImage: currentFrame)
                     .resizable()
                     .scaledToFit()
