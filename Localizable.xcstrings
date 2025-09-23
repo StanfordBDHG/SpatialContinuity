@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
     "API Key Settings" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -53,6 +56,9 @@
         }
       }
     },
+    "The viewfinder's view" : {
+
+    },
     "Your pin will appear here." : {
       "localizations" : {
         "de" : {
@@ -62,6 +68,9 @@
           }
         }
       }
+    },
+    "Zoom" : {
+
     }
   },
   "version" : "1.0"
