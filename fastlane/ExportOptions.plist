@@ -6,8 +6,6 @@
 	<string>app-store</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>edu.stanford.spatialcontinnuity</key>
-		<string>SpatialContinuity</string>
 		<key>edu.stanford.spatialcontinuitycamera</key>
 		<string>SpatialContinuityCamera</string>
 	</dict>

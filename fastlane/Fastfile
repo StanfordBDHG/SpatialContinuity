@@ -1,13 +1,10 @@
 #
-# This source file is part of the StanfordBDHG Template Application project
+# This source file is part of the Spatial Continuity project 
 #
-# SPDX-FileCopyrightText: 2023 Stanford University
+# SPDX-FileCopyrightText: 2025 Paul Heidekrüger 
 #
 # SPDX-License-Identifier: MIT
 #
-
-default_platform(:ios)
-
 platform :ios do
   before_all do
     ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "5"
@@ -17,7 +14,6 @@ platform :ios do
   desc "Build and test"
   lane :test do
     test_iphone
-    test_vision_pro
   end
 
   desc "Build and test for iPhone"
@@ -25,14 +21,16 @@ platform :ios do
     private_test(devices: ["iPhone 15 Pro"], result: "iphone")
   end
 
-  desc "Build and test for Vision Pro"
-  lane :test_vision_pro do
-    private_test(devices: ["Apple Vision Pro"], result: "vision_pro")
-  end
+  # desc "Build and test for Vision Pro"
+  # lane :test_vision_pro do
+  #   private_test(devices: ["Apple Vision Pro"], result: "vision_pro")
+  # end
 
   desc "Internal build and test lane"
   private_lane :private_test do |options|
     run_tests(
+			project: "SpatialContinuity.xcodeproj",
+			scheme: "SpatialContinuityCamera",
       skip_build: true,
       derived_data_path: ".derivedData",
       xcargs: [
@@ -49,13 +47,16 @@ platform :ios do
       destination: options[:destination],
       result_bundle: true,
       output_directory: ".",
-      result_bundle_path: "./#{options[:result]}.xcresult"
+      result_bundle_path: "./#{options[:result]}.xcresult",
+			build_for_testing: true
     )
   end
 
   desc "CodeQL"
   lane :codeql do
     build_app(
+			project: "SpatialContinuity.xcodeproj",
+			scheme: "SpatialContinuityCamera",
       skip_archive: true,
       skip_codesigning: true,
       derived_data_path: ".derivedData",
@@ -69,6 +70,8 @@ platform :ios do
   desc "Build app"
   lane :build do
     build_app(
+			project: "SpatialContinuity.xcodeproj",
+			scheme: "SpatialContinuityCamera",
       derived_data_path: ".derivedData",
       xcargs: [
         "-skipPackagePluginValidation",
@@ -76,7 +79,7 @@ platform :ios do
       ],
       destination: "generic/platform=iOS",
       output_directory: ".build",
-      archive_path: ".build/TemplateApplication.xcarchive",
+      archive_path: ".build/SpatialContinuityCamera.xcarchive",
     )
     # This is an unfortunate workaround for a bug in fastlane: https://github.com/fastlane/fastlane/pull/21319
     Dir.chdir("..") do
@@ -85,7 +88,7 @@ platform :ios do
         xcodebuild \
           -exportArchive \
           -exportOptionsPlist ./fastlane/ExportOptions.plist \
-          -archivePath ./.build/TemplateApplication.xcarchive \
+          -archivePath ./.build/SpatialContinuityCamera.xcarchive \
           -exportPath ./.build
         "
       )
@@ -113,7 +116,7 @@ platform :ios do
     build
     commit = last_git_commit
     upload_to_testflight(
-      ipa: "./.build/spatialcontinuity.ipa",
+      ipa: "./.build/spatialcontinuitycamera.ipa",
       distribute_external: true,
       groups: [
         "External Testers"
