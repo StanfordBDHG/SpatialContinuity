@@ -16,7 +16,7 @@ import UIKit
 // * https://developer.apple.com/documentation/avfoundation/capture_setup/avcambarcode_detecting_barcodes_and_faces
 // * https://www.neuralception.com/detection-app-tutorial-camera-feed/
 
-public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
+class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     private enum SessionSetupResult {
         case success
         case notAuthorized
@@ -58,10 +58,9 @@ public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         }
     }
 
-    public var currentPin: UIImage?
-    public var minZoom: CGFloat = 1.0
-    public var maxZoom: CGFloat = 1.0
-    public var videoDevice: AVCaptureDevice?
+    var minZoom: CGFloat = 1.0
+    var maxZoom: CGFloat = 1.0
+    var videoDevice: AVCaptureDevice?
 
     override init() {
         super.init()
@@ -173,7 +172,7 @@ public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     }
 
     // Verbatim from https://developer.apple.com/tutorials/sample-apps/capturingphotos-camerapreview
-    public func captureOutput(
+    func captureOutput(
         _: AVCaptureOutput,
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection
@@ -189,55 +188,6 @@ public class SCC: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
 
         addToVideoStream?(pixelBuffer)
         addToPreviewStream?(CIImage(cvPixelBuffer: pixelBuffer))
-    }
-
-    func capturePhoto() {
-        guard let photoOutput
-        else {
-            return
-        }
-        sessionQueue.async {
-            var photoSettings = AVCapturePhotoSettings()
-
-            if photoOutput.availablePhotoCodecTypes.contains(.hevc) {
-                photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.hevc])
-            }
-
-            photoSettings.flashMode = .off
-            // photoSettings.isHighResolutionPhotoEnabled = true
-            if let previewPhotoPixelFormatType = photoSettings.availablePreviewPhotoPixelFormatTypes.first {
-                photoSettings
-                    .previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPhotoPixelFormatType]
-            }
-            photoSettings.photoQualityPrioritization = .balanced
-
-            if let photoOutputVideoConnection = photoOutput.connection(with: .video) {
-                if photoOutputVideoConnection.isVideoOrientationSupported,
-                   let videoOrientation = self.videoOrientationFor(self.deviceOrientation) {
-                    photoOutputVideoConnection.videoOrientation = videoOrientation
-                    print("Settig orientation")
-                }
-            }
-
-            photoOutput.capturePhoto(with: photoSettings, delegate: self)
-        }
-    }
-}
-
-extension UIScreen {
-    private var orientation: UIDeviceOrientation {
-        let point = coordinateSpace.convert(CGPoint.zero, to: fixedCoordinateSpace)
-        if point == CGPoint.zero {
-            return .portrait
-        } else if point.x != 0, point.y != 0 {
-            return .portraitUpsideDown
-        } else if point.x == 0, point.y != 0 {
-            return .landscapeRight // .landscapeLeft
-        } else if point.x != 0, point.y == 0 {
-            return .landscapeLeft // .landscapeRight
-        } else {
-            return .unknown
-        }
     }
 }
 
