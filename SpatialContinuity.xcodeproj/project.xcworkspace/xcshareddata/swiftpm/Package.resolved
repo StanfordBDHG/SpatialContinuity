@@ -1,5 +1,5 @@
 {
-  "originHash" : "77f6c66b1034a3635d3edae544c3816f819a809ec64068759a87b3c2e658e32e",
+  "originHash" : "983b68c556b4bb27f40ef599a00c90dbfdde0068afe359eb8a0dbea6bf34d551",
   "pins" : [
     {
       "identity" : "llama.cpp",
@@ -79,7 +79,7 @@
       "location" : "https://github.com/StanfordSpezi/SpeziSpeech",
       "state" : {
         "revision" : "0b79f72fc8b0606e09787926446dfafb541669d3",
-        "version" : "1.2.0"
+        "version" : "1.1.0"
       }
     },
     {
