@@ -9,3 +9,5 @@
 project: SpatialContinuity.xcodeproj
 schemes:
 - SpatialContinuityCamera
+report_exclude:
+- SpatialContinuityShared/**/*.swift
