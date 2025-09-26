@@ -13,3 +13,7 @@ apple_id ENV["APPLE_ID"]  # Your Apple email address
 for_platform :ios do
   app_identifier 'edu.stanford.spatialcontinuitycamera'
 end
+
+for_platform :visionos do
+  app_identifier 'edu.stanford.spatialcontinuity'
+end
