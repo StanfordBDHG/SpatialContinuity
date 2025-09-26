@@ -15,3 +15,7 @@ report_exclude:
 # HACK: Is this the correct way to exclude external libraries from being checked?
 - ../../Library/**/*.swift
 disable_unused_import_analysis: true
+relative_results: true
+build_arguments:
+- -skipPackagePluginValidation
+- -skipMacroValidation
