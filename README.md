@@ -45,3 +45,16 @@ If an OpenAI API key is provided, spoken image descriptions will be generated as
 ## Contributors
 
 You can find a list of contributors in the [CONTRIBUTORS.md](/CONTRIBUTORS.md) file.
+
+
+## Open Source Contributions
+
+As part of this work, we made the following open source contributions:
+* https://github.com/apple/swift-openapi-runtime/pull/115
+* https://github.com/apple/swift-openapi-generator/pull/625
+* https://github.com/openai/openai-openapi/pull/311#issuecomment-2600521373
+* https://github.com/StanfordSpezi/SpeziViews/pull/49
+* https://github.com/StanfordSpezi/SpeziAccount/pull/82
+* https://github.com/StanfordSpezi/SpeziLLM/pull/64
+* https://github.com/StanfordSpezi/SpeziViews/pull/43
+* https://github.com/StanfordSpezi/SpeziLLM/pull/61
