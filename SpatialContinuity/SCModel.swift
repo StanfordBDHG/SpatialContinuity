@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-public class SCModel: ObservableObject {
-    public let networking: Networking = .init()
-    @Published public var currentFrame: UIImage?
-    @Published public var currentPin: UIImage?
+class SCModel: ObservableObject {
+    let networking: Networking = .init()
+    @Published var currentFrame: UIImage?
+    @Published var currentPin: UIImage?
 
     init() {
         networking.startBrowsing()

@@ -9,5 +9,9 @@
 project: SpatialContinuity.xcodeproj
 schemes:
 - SpatialContinuityCamera
+- SpatialContinuity
 report_exclude:
 - SpatialContinuityShared/**/*.swift
+# HACK: Is this the correct way to exclude external libraries from being checked?
+- ../../Library/**/*.swift
+disable_unused_import_analysis: true
