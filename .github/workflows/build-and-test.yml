@@ -29,24 +29,25 @@ jobs:
     uses: StanfordBDHG/.github/.github/workflows/periphery.yml@v2
     permissions:
       contents: read
-  codeql_scc:
-    name: CodeQL Spatial Continuity Camera
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      codeql: true
-      fastlanelane: ios codeql_scc
-    permissions:
-      security-events: write
-      actions: read
-  codeql_sc:
-    name: CodeQL Spatial Continuity
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      codeql: true
-      fastlanelane: visionos codeql_sc
-    permissions:
-      security-events: write
-      actions: read
+  # NOTE: CodeQL disabled until it supports the current Swift toolchain
+  # codeql_scc:
+  #   name: CodeQL Spatial Continuity Camera
+  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+  #   with:
+  #     codeql: true
+  #     fastlanelane: ios codeql_scc
+  #   permissions:
+  #     security-events: write
+  #     actions: read
+  # codeql_sc:
+  #   name: CodeQL Spatial Continuity
+  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+  #   with:
+  #     codeql: true
+  #     fastlanelane: visionos codeql_sc
+  #   permissions:
+  #     security-events: write
+  #     actions: read
   buildandtest_scc:
     name: Build Spatial Continuity Camera (for Testing)
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
