@@ -13,7 +13,7 @@ schemes:
 report_exclude:
 - SpatialContinuityShared/**/*.swift
 # HACK: Is this the correct way to exclude external libraries from being checked?
-- ../../Library/**/*.swift
+- "**/*SpeziLLM*/**/*.swift"
 disable_unused_import_analysis: true
 relative_results: true
 build_arguments:
