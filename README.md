@@ -37,11 +37,6 @@ If an OpenAI API key is provided, spoken image descriptions will be generated as
 2. Ensure that both your iPhone and Vision Pro are on the same network. When opening the Spatial Continuity Camera app on iPhone, the connection should be established automatically.
 
 
-## Known Issues
-
-* Connecting the Spatial Continuity and Spatial Continuity Camera apps may be unreliable at times. Suggestions and PRs welcome! 
-
-
 ## Contributors
 
 You can find a list of contributors in the [CONTRIBUTORS.md](/CONTRIBUTORS.md) file.
