@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this software or reference our publication, please cite it as below."
+title: "Spatial Continuity: Investigating Use Cases of Spatial Computing for Users with Low Vision"
+authors:
+  - family-names: "Heidekrüger"
+    given-names: "Paul"
+    orcid: "https://orcid.org/0009-0000-8556-7353"
+    affiliation: "Technical University of Munich"
+  - family-names: "Brügge"
+    given-names: "Bernd"
+    orcid: "https://orcid.org/0000-0001-8331-0490"
+    affiliation: "Technical University of Munich"
+  - family-names: "Aalami"
+    given-names: "Oliver"
+    orcid: "https://orcid.org/0000-0002-7799-2429"
+    affiliation: "Stanford Mussallem Center for Biodesign, Stanford University"
+  - family-names: "Schmiedmayer"
+    given-names: "Paul"
+    orcid: "https://orcid.org/0000-0002-8607-9148"
+    affiliation: "Stanford Mussallem Center for Biodesign, Stanford University"
+doi: "10.1145/3663547.3759711"
+url: "https://doi.org/10.1145/3663547.3759711"
+preferred-citation:
+  type: conference-paper
+  title: "Spatial Continuity: Investigating Use Cases of Spatial Computing for Users with Low Vision"
+  authors:
+    - family-names: "Heidekrüger"
+      given-names: "Paul"
+      orcid: "https://orcid.org/0009-0000-8556-7353"
+    - family-names: "Brügge"
+      given-names: "Bernd"
+      orcid: "https://orcid.org/0000-0001-8331-0490"
+    - family-names: "Aalami"
+      given-names: "Oliver"
+      orcid: "https://orcid.org/0000-0002-7799-2429"
+    - family-names: "Schmiedmayer"
+      given-names: "Paul"
+      orcid: "https://orcid.org/0000-0002-8607-9148"
+  doi: "10.1145/3663547.3759711"
+  collection-title: "Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’25)"
+  conference:
+    name: "The 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’25)"
+    location: "Denver, CO, USA"
+    date-start: 2025-10-26
+    date-end: 2025-10-29
+  publisher:
+    name: "ACM"
+    location: "New York, NY, USA"
+  year: 2025
