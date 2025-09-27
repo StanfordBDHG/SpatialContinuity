@@ -1,7 +1,7 @@
 #
-# This source file is part of the StanfordBDHG Template Application project
+# This source file is part of the Spatial Continuity project
 #
-# SPDX-FileCopyrightText: 2023 Stanford University
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
 #
 # SPDX-License-Identifier: MIT
 #
@@ -29,33 +29,57 @@ jobs:
     uses: StanfordBDHG/.github/.github/workflows/periphery.yml@v2
     permissions:
       contents: read
-  codeql:
-    name: CodeQL
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      codeql: true
-      fastlanelane: codeql
-    permissions:
-      security-events: write
-      actions: read
-  buildandtest:
-    name: Build and Test
+  # NOTE: CodeQL disabled until it supports the current Swift toolchain
+  # codeql_scc:
+  #   name: CodeQL Spatial Continuity Camera
+  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+  #   with:
+  #     codeql: true
+  #     fastlanelane: ios codeql_scc
+  #   permissions:
+  #     security-events: write
+  #     actions: read
+  # codeql_sc:
+  #   name: CodeQL Spatial Continuity
+  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+  #   with:
+  #     codeql: true
+  #     fastlanelane: visionos codeql_sc
+  #   permissions:
+  #     security-events: write
+  #     actions: read
+  buildandtest_scc:
+    name: Build Spatial Continuity Camera (for Testing)
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     strategy:
       fail-fast: false
       matrix:
-        platform: [iphone, ipad, apple_watch, apple_tv, vision_pro]
+        platform: [iphone]
     with:
       # We use the self-hosted runners as the main GitHub Action runners do not have the necessary performance.
       # Remove the `runsonlabels: '["macOS", "self-hosted"]'` lines if you do not administer your own GitHub Runners.
       runsonlabels: '["macOS", "self-hosted"]'
-      fastlanelane: test_${{ matrix.platform }}
+      fastlanelane: ios test_iphone # ${{ matrix.platform }}
       artifactname: ${{ matrix.platform }}.xcresult
-  uploadcoveragereport:
-    name: Upload Coverage Report
-    needs: [buildandtest]
-    uses: StanfordBDHG/.github/.github/workflows/create-and-upload-coverage-report.yml@v2
+  buildandtest_sc:
+    name: Build Spatial Continuity (for Testing)
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [VisionPro]
     with:
-      coveragereports: iphone.xcresult ipad.xcresult apple_watch.xcresult apple_tv.xcresult vision_pro.xcresult
-    secrets:
-      token: ${{ secrets.CODECOV_TOKEN }}
+      # We use the self-hosted runners as the main GitHub Action runners do not have the necessary performance.
+      # Remove the `runsonlabels: '["macOS", "self-hosted"]'` lines if you do not administer your own GitHub Runners.
+      runsonlabels: '["macOS", "self-hosted"]'
+      fastlanelane: visionos test_vision_pro # ${{ matrix.platform }}
+      artifactname: ${{ matrix.platform }}.xcresult
+  # NOTE: Disabled since no tests are being run ATM
+  # uploadcoveragereport:
+  #   name: Upload Coverage Report
+  #   needs: [buildandtest]
+  #   uses: StanfordBDHG/.github/.github/workflows/create-and-upload-coverage-report.yml@v2
+  #   with:
+  #     coveragereports: iphone.xcresult
+  #   secrets:
+  #     token: ${{ secrets.CODECOV_TOKEN }}

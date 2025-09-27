@@ -1,32 +1,17 @@
 #
-# This source file is part of the StanfordBDHG Template Application project
+# This source file is part of the Spatial Continuity project
 #
-# SPDX-FileCopyrightText: 2023 Stanford University
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
 #
 # SPDX-License-Identifier: MIT
 #
 
-# Swift Package Manager
-*.xcodeproj
-.swiftpm
-.derivedData
-.build
-!TemplateApplication.xcodeproj
-
-# IDE related folders
-.idea
-
-# Xcode
-xcuserdata/
-*.ipa
-*.dSYM
-*.dSYM.zip
-
-# Other files
 .DS_Store
-.env
+/.build
+/Packages
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
 
-# Tests
-report.junit
-report.html
-*.xcresult

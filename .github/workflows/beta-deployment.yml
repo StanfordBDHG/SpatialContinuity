@@ -1,7 +1,7 @@
 #
-# This source file is part of the StanfordBDHG Template Application project
+# This source file is part of the Spatial Continuity project
 #
-# SPDX-FileCopyrightText: 2023 Stanford University
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
 #
 # SPDX-License-Identifier: MIT
 #
@@ -22,17 +22,4 @@ jobs:
       contents: read
       actions: read
       security-events: write
-    secrets: inherit
-  iosapptestflightdeployment:
-    name: iOS App TestFlight Deployment
-    needs: buildandtest
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    concurrency:
-      group: appstoreconnect
-    permissions:
-      contents: read
-    with:
-      setupsigning: true
-      fastlanelane: beta
-      environment: beta
     secrets: inherit

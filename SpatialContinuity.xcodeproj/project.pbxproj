@@ -1,0 +1,1016 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05036FAD96F83782A5BD93AB /* SCCPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426CB8B3F4A311C17F1A9CC /* SCCPreviewView.swift */; };
+		5436E9AFB5CC5A5FD301764D /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD782C297202ED97DC9B8A /* OnboardingFlow.swift */; };
+		675E86767CB3D4F09A7565BF /* SCStaticPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99309CCDF0579A7F727495C1 /* SCStaticPinView.swift */; };
+		808EF736835F43FD011E17C2 /* SCCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1CCE54B888A1DE2C0D97F /* SCCModel.swift */; };
+		85686D9E4C08189777A197A1 /* SCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C07A66E4664B271A3E8A2A4 /* SCC.swift */; };
+		B73848F34E82FF8EA95EDA1E /* OpenAIAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EA8EA6F102C2BB224A7246 /* OpenAIAPIKey.swift */; };
+		DA20C2692C57A9A900996D3D /* SpeziLLMOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = DA20C2682C57A9A900996D3D /* SpeziLLMOpenAI */; };
+		DA8C4F642CA37777004C6DAA /* SpatialContinuityShared in Frameworks */ = {isa = PBXBuildFile; productRef = DA8C4F632CA37777004C6DAA /* SpatialContinuityShared */; };
+		DA8C4F662CA37D9A004C6DAA /* SCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C4F652CA37D94004C6DAA /* SCModel.swift */; };
+		DA8C4F682CA3805E004C6DAA /* LiveVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C4F672CA3805A004C6DAA /* LiveVideoView.swift */; };
+		DABFEB382BD3999800137B32 /* SpatialContinuityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFEB372BD3999800137B32 /* SpatialContinuityApp.swift */; };
+		DABFEB3C2BD3999800137B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFEB3B2BD3999800137B32 /* Assets.xcassets */; };
+		DABFEB3F2BD3999800137B32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFEB3E2BD3999800137B32 /* Preview Assets.xcassets */; };
+		DABFEB5A2BD39AA800137B32 /* SpatialContinuityCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFEB592BD39AA800137B32 /* SpatialContinuityCameraApp.swift */; };
+		DABFEB5C2BD39AA800137B32 /* SCCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFEB5B2BD39AA800137B32 /* SCCView.swift */; };
+		DABFEB5E2BD39AA900137B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFEB5D2BD39AA900137B32 /* Assets.xcassets */; };
+		DABFEB612BD39AA900137B32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFEB602BD39AA900137B32 /* Preview Assets.xcassets */; };
+		DAD4939C2E881BE000F02F93 /* Localizable.xcstrings.license in Resources */ = {isa = PBXBuildFile; fileRef = DAD493992E881BE000F02F93 /* Localizable.xcstrings.license */; };
+		DAD7C43D2D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
+		DAD7C43E2D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
+		DAD7C43F2D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
+		DAD7C4402D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
+		DAD7C4412D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
+		DADD7BFA2CA3326B0030DEE2 /* SpatialContinuityShared in Frameworks */ = {isa = PBXBuildFile; productRef = DADD7BF92CA3326B0030DEE2 /* SpatialContinuityShared */; };
+		E70DD0132CF472013D510EDD /* StorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83356AA934B5CF91F3E713 /* StorageKeys.swift */; };
+		F1976584BC04467AF2515C7E /* LLMOpenAIAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50E740B86AFFDB9AE113C7 /* LLMOpenAIAppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DABFEB462BD3999900137B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABFEB282BD3999800137B32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABFEB2F2BD3999800137B32;
+			remoteInfo = SpatialContinuity;
+		};
+		DABFEB672BD39AA900137B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABFEB282BD3999800137B32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABFEB562BD39AA800137B32;
+			remoteInfo = SpatialContinuityCamera;
+		};
+		DABFEB712BD39AA900137B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABFEB282BD3999800137B32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABFEB562BD39AA800137B32;
+			remoteInfo = SpatialContinuityCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C07A66E4664B271A3E8A2A4 /* SCC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SCC.swift; sourceTree = "<group>"; };
+		2BBD782C297202ED97DC9B8A /* OnboardingFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		6F83356AA934B5CF91F3E713 /* StorageKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StorageKeys.swift; sourceTree = "<group>"; };
+		89EA8EA6F102C2BB224A7246 /* OpenAIAPIKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpenAIAPIKey.swift; sourceTree = "<group>"; };
+		99309CCDF0579A7F727495C1 /* SCStaticPinView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SCStaticPinView.swift; sourceTree = "<group>"; };
+		D426CB8B3F4A311C17F1A9CC /* SCCPreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SCCPreviewView.swift; sourceTree = "<group>"; };
+		DA8C4F652CA37D94004C6DAA /* SCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCModel.swift; sourceTree = "<group>"; };
+		DA8C4F672CA3805A004C6DAA /* LiveVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoView.swift; sourceTree = "<group>"; };
+		DABFEB302BD3999800137B32 /* SpatialContinuity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpatialContinuity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFEB372BD3999800137B32 /* SpatialContinuityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialContinuityApp.swift; sourceTree = "<group>"; };
+		DABFEB3B2BD3999800137B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABFEB3E2BD3999800137B32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DABFEB402BD3999800137B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABFEB452BD3999900137B32 /* SpatialContinuityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpatialContinuityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFEB572BD39AA800137B32 /* SpatialContinuityCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpatialContinuityCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFEB592BD39AA800137B32 /* SpatialContinuityCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialContinuityCameraApp.swift; sourceTree = "<group>"; };
+		DABFEB5B2BD39AA800137B32 /* SCCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCView.swift; sourceTree = "<group>"; };
+		DABFEB5D2BD39AA900137B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABFEB602BD39AA900137B32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DABFEB662BD39AA900137B32 /* SpatialContinuityCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpatialContinuityCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFEB702BD39AA900137B32 /* SpatialContinuityCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpatialContinuityCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD493552E881AC700F02F93 /* CONTRIBUTORS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTORS.md; sourceTree = "<group>"; };
+		DAD493562E881AC700F02F93 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DAD493572E881AC700F02F93 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		DAD493582E881AC700F02F93 /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
+		DAD493592E881AC700F02F93 /* ExportOptions.plist.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExportOptions.plist.license; sourceTree = "<group>"; };
+		DAD4935A2E881AC700F02F93 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		DAD4935B2E881AC700F02F93 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAD4935C2E881AC700F02F93 /* README.md.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md.license; sourceTree = "<group>"; };
+		DAD4935E2E881AC700F02F93 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		DAD4935F2E881AC700F02F93 /* MIT.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MIT.txt; sourceTree = "<group>"; };
+		DAD493992E881BE000F02F93 /* Localizable.xcstrings.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = Localizable.xcstrings.license; sourceTree = "<group>"; };
+		DAD493BF2E881E0400F02F93 /* SC_Prototype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Prototype.png; sourceTree = "<group>"; };
+		DAD493C02E881E0400F02F93 /* tum-logo-dark-mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tum-logo-dark-mode.png"; sourceTree = "<group>"; };
+		DAD493C12E881E0400F02F93 /* tum-logo-light-mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tum-logo-light-mode.png"; sourceTree = "<group>"; };
+		DAD493C32E881E0400F02F93 /* beta-deployment.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "beta-deployment.yml"; sourceTree = "<group>"; };
+		DAD493C42E881E0400F02F93 /* build-and-test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-test.yml"; sourceTree = "<group>"; };
+		DAD493E02E88202600F02F93 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		DAD821D62C28B89200A6193B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DADD7BF82CA332490030DEE2 /* SpatialContinuityShared */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SpatialContinuityShared; sourceTree = "<group>"; };
+		DFE1CCE54B888A1DE2C0D97F /* SCCModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SCCModel.swift; sourceTree = "<group>"; };
+		ED50E740B86AFFDB9AE113C7 /* LLMOpenAIAppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LLMOpenAIAppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DABFEB2D2BD3999800137B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADD7BFA2CA3326B0030DEE2 /* SpatialContinuityShared in Frameworks */,
+				DA20C2692C57A9A900996D3D /* SpeziLLMOpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB422BD3999900137B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB542BD39AA800137B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8C4F642CA37777004C6DAA /* SpatialContinuityShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB632BD39AA900137B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB6D2BD39AA900137B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5F427F32A98BA1971770505 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2BBD782C297202ED97DC9B8A /* OnboardingFlow.swift */,
+				89EA8EA6F102C2BB224A7246 /* OpenAIAPIKey.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DABFEB272BD3999800137B32 = {
+			isa = PBXGroup;
+			children = (
+				DAD493E02E88202600F02F93 /* README.md */,
+				DAD493C62E881E0400F02F93 /* .github */,
+				DAD493992E881BE000F02F93 /* Localizable.xcstrings.license */,
+				DAD493552E881AC700F02F93 /* CONTRIBUTORS.md */,
+				DAD4935D2E881AC700F02F93 /* fastlane */,
+				DAD4935E2E881AC700F02F93 /* LICENSE.md */,
+				DAD493602E881AC700F02F93 /* LICENSES */,
+				DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */,
+				DADD7BF82CA332490030DEE2 /* SpatialContinuityShared */,
+				DABFEB322BD3999800137B32 /* SpatialContinuity */,
+				DABFEB582BD39AA800137B32 /* SpatialContinuityCamera */,
+				DABFEB312BD3999800137B32 /* Products */,
+				DAFE82FC2C3D73460089B221 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DABFEB312BD3999800137B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DABFEB302BD3999800137B32 /* SpatialContinuity.app */,
+				DABFEB452BD3999900137B32 /* SpatialContinuityTests.xctest */,
+				DABFEB572BD39AA800137B32 /* SpatialContinuityCamera.app */,
+				DABFEB662BD39AA900137B32 /* SpatialContinuityCameraTests.xctest */,
+				DABFEB702BD39AA900137B32 /* SpatialContinuityCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DABFEB322BD3999800137B32 /* SpatialContinuity */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C4F672CA3805A004C6DAA /* LiveVideoView.swift */,
+				DA8C4F652CA37D94004C6DAA /* SCModel.swift */,
+				DABFEB372BD3999800137B32 /* SpatialContinuityApp.swift */,
+				DABFEB3B2BD3999800137B32 /* Assets.xcassets */,
+				DABFEB402BD3999800137B32 /* Info.plist */,
+				DABFEB3D2BD3999800137B32 /* Preview Content */,
+				99309CCDF0579A7F727495C1 /* SCStaticPinView.swift */,
+				ED50E740B86AFFDB9AE113C7 /* LLMOpenAIAppDelegate.swift */,
+				6F83356AA934B5CF91F3E713 /* StorageKeys.swift */,
+				A5F427F32A98BA1971770505 /* Onboarding */,
+			);
+			path = SpatialContinuity;
+			sourceTree = "<group>";
+		};
+		DABFEB3D2BD3999800137B32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DABFEB3E2BD3999800137B32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DABFEB582BD39AA800137B32 /* SpatialContinuityCamera */ = {
+			isa = PBXGroup;
+			children = (
+				DAD821D62C28B89200A6193B /* Info.plist */,
+				DABFEB592BD39AA800137B32 /* SpatialContinuityCameraApp.swift */,
+				DABFEB5B2BD39AA800137B32 /* SCCView.swift */,
+				DABFEB5D2BD39AA900137B32 /* Assets.xcassets */,
+				DABFEB5F2BD39AA900137B32 /* Preview Content */,
+				DFE1CCE54B888A1DE2C0D97F /* SCCModel.swift */,
+				0C07A66E4664B271A3E8A2A4 /* SCC.swift */,
+				D426CB8B3F4A311C17F1A9CC /* SCCPreviewView.swift */,
+			);
+			path = SpatialContinuityCamera;
+			sourceTree = "<group>";
+		};
+		DABFEB5F2BD39AA900137B32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DABFEB602BD39AA900137B32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAD4935D2E881AC700F02F93 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493562E881AC700F02F93 /* .gitignore */,
+				DAD493572E881AC700F02F93 /* Appfile */,
+				DAD493582E881AC700F02F93 /* ExportOptions.plist */,
+				DAD493592E881AC700F02F93 /* ExportOptions.plist.license */,
+				DAD4935A2E881AC700F02F93 /* Fastfile */,
+				DAD4935B2E881AC700F02F93 /* README.md */,
+				DAD4935C2E881AC700F02F93 /* README.md.license */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		DAD493602E881AC700F02F93 /* LICENSES */ = {
+			isa = PBXGroup;
+			children = (
+				DAD4935F2E881AC700F02F93 /* MIT.txt */,
+			);
+			path = LICENSES;
+			sourceTree = "<group>";
+		};
+		DAD493C22E881E0400F02F93 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493BF2E881E0400F02F93 /* SC_Prototype.png */,
+				DAD493C02E881E0400F02F93 /* tum-logo-dark-mode.png */,
+				DAD493C12E881E0400F02F93 /* tum-logo-light-mode.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		DAD493C52E881E0400F02F93 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493C32E881E0400F02F93 /* beta-deployment.yml */,
+				DAD493C42E881E0400F02F93 /* build-and-test.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		DAD493C62E881E0400F02F93 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493C22E881E0400F02F93 /* assets */,
+				DAD493C52E881E0400F02F93 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		DAFE82FC2C3D73460089B221 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DABFEB2F2BD3999800137B32 /* SpatialContinuity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFEB4D2BD3999900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuity" */;
+			buildPhases = (
+				DABFEB2C2BD3999800137B32 /* Sources */,
+				DABFEB2D2BD3999800137B32 /* Frameworks */,
+				DABFEB2E2BD3999800137B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpatialContinuity;
+			packageProductDependencies = (
+				DA20C2682C57A9A900996D3D /* SpeziLLMOpenAI */,
+				DADD7BF92CA3326B0030DEE2 /* SpatialContinuityShared */,
+			);
+			productName = SpatialContinuity;
+			productReference = DABFEB302BD3999800137B32 /* SpatialContinuity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DABFEB442BD3999900137B32 /* SpatialContinuityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFEB502BD3999900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityTests" */;
+			buildPhases = (
+				DABFEB412BD3999900137B32 /* Sources */,
+				DABFEB422BD3999900137B32 /* Frameworks */,
+				DABFEB432BD3999900137B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABFEB472BD3999900137B32 /* PBXTargetDependency */,
+			);
+			name = SpatialContinuityTests;
+			productName = SpatialContinuityTests;
+			productReference = DABFEB452BD3999900137B32 /* SpatialContinuityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DABFEB562BD39AA800137B32 /* SpatialContinuityCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFEB782BD39AA900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityCamera" */;
+			buildPhases = (
+				DABFEB532BD39AA800137B32 /* Sources */,
+				DABFEB542BD39AA800137B32 /* Frameworks */,
+				DABFEB552BD39AA800137B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpatialContinuityCamera;
+			productName = SpatialContinuityCamera;
+			productReference = DABFEB572BD39AA800137B32 /* SpatialContinuityCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DABFEB652BD39AA900137B32 /* SpatialContinuityCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFEB7B2BD39AA900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityCameraTests" */;
+			buildPhases = (
+				DABFEB622BD39AA900137B32 /* Sources */,
+				DABFEB632BD39AA900137B32 /* Frameworks */,
+				DABFEB642BD39AA900137B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABFEB682BD39AA900137B32 /* PBXTargetDependency */,
+			);
+			name = SpatialContinuityCameraTests;
+			productName = SpatialContinuityCameraTests;
+			productReference = DABFEB662BD39AA900137B32 /* SpatialContinuityCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DABFEB6F2BD39AA900137B32 /* SpatialContinuityCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFEB7E2BD39AA900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityCameraUITests" */;
+			buildPhases = (
+				DABFEB6C2BD39AA900137B32 /* Sources */,
+				DABFEB6D2BD39AA900137B32 /* Frameworks */,
+				DABFEB6E2BD39AA900137B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABFEB722BD39AA900137B32 /* PBXTargetDependency */,
+			);
+			name = SpatialContinuityCameraUITests;
+			productName = SpatialContinuityCameraUITests;
+			productReference = DABFEB702BD39AA900137B32 /* SpatialContinuityCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DABFEB282BD3999800137B32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					DABFEB2F2BD3999800137B32 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					DABFEB442BD3999900137B32 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DABFEB2F2BD3999800137B32;
+					};
+					DABFEB562BD39AA800137B32 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					DABFEB652BD39AA900137B32 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DABFEB562BD39AA800137B32;
+					};
+					DABFEB6F2BD39AA900137B32 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DABFEB562BD39AA800137B32;
+					};
+				};
+			};
+			buildConfigurationList = DABFEB2B2BD3999800137B32 /* Build configuration list for PBXProject "SpatialContinuity" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = DABFEB272BD3999800137B32;
+			packageReferences = (
+				DA20C2672C57A9A900996D3D /* XCRemoteSwiftPackageReference "SpeziLLM" */,
+			);
+			productRefGroup = DABFEB312BD3999800137B32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DABFEB2F2BD3999800137B32 /* SpatialContinuity */,
+				DABFEB442BD3999900137B32 /* SpatialContinuityTests */,
+				DABFEB562BD39AA800137B32 /* SpatialContinuityCamera */,
+				DABFEB652BD39AA900137B32 /* SpatialContinuityCameraTests */,
+				DABFEB6F2BD39AA900137B32 /* SpatialContinuityCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DABFEB2E2BD3999800137B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFEB3F2BD3999800137B32 /* Preview Assets.xcassets in Resources */,
+				DABFEB3C2BD3999800137B32 /* Assets.xcassets in Resources */,
+				DAD4939C2E881BE000F02F93 /* Localizable.xcstrings.license in Resources */,
+				DAD7C43D2D92ACEF0075E175 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB432BD3999900137B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD7C43E2D92ACEF0075E175 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB552BD39AA800137B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFEB612BD39AA900137B32 /* Preview Assets.xcassets in Resources */,
+				DABFEB5E2BD39AA900137B32 /* Assets.xcassets in Resources */,
+				DAD7C43F2D92ACEF0075E175 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB642BD39AA900137B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD7C4402D92ACEF0075E175 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB6E2BD39AA900137B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD7C4412D92ACEF0075E175 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DABFEB2C2BD3999800137B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFEB382BD3999800137B32 /* SpatialContinuityApp.swift in Sources */,
+				DA8C4F682CA3805E004C6DAA /* LiveVideoView.swift in Sources */,
+				675E86767CB3D4F09A7565BF /* SCStaticPinView.swift in Sources */,
+				F1976584BC04467AF2515C7E /* LLMOpenAIAppDelegate.swift in Sources */,
+				E70DD0132CF472013D510EDD /* StorageKeys.swift in Sources */,
+				5436E9AFB5CC5A5FD301764D /* OnboardingFlow.swift in Sources */,
+				DA8C4F662CA37D9A004C6DAA /* SCModel.swift in Sources */,
+				B73848F34E82FF8EA95EDA1E /* OpenAIAPIKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB412BD3999900137B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB532BD39AA800137B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFEB5C2BD39AA800137B32 /* SCCView.swift in Sources */,
+				DABFEB5A2BD39AA800137B32 /* SpatialContinuityCameraApp.swift in Sources */,
+				808EF736835F43FD011E17C2 /* SCCModel.swift in Sources */,
+				85686D9E4C08189777A197A1 /* SCC.swift in Sources */,
+				05036FAD96F83782A5BD93AB /* SCCPreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB622BD39AA900137B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFEB6C2BD39AA900137B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DABFEB472BD3999900137B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABFEB2F2BD3999800137B32 /* SpatialContinuity */;
+			targetProxy = DABFEB462BD3999900137B32 /* PBXContainerItemProxy */;
+		};
+		DABFEB682BD39AA900137B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABFEB562BD39AA800137B32 /* SpatialContinuityCamera */;
+			targetProxy = DABFEB672BD39AA900137B32 /* PBXContainerItemProxy */;
+		};
+		DABFEB722BD39AA900137B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABFEB562BD39AA800137B32 /* SpatialContinuityCamera */;
+			targetProxy = DABFEB712BD39AA900137B32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DABFEB4B2BD3999900137B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		DABFEB4C2BD3999900137B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		DABFEB4E2BD3999900137B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpatialContinuity/Preview Content\"";
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used for connecting Spatial Continuity to Spatial Continuity Camera";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DABFEB4F2BD3999900137B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpatialContinuity/Preview Content\"";
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used for connecting Spatial Continuity to Spatial Continuity Camera";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DABFEB512BD3999900137B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpatialContinuity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpatialContinuity";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		DABFEB522BD3999900137B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpatialContinuity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpatialContinuity";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		DABFEB792BD39AA900137B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpatialContinuityCamera/Preview Content\"";
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpatialContinuityCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to display a preview of Spatial Continuity Camera";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used for connecting Spatial Continuity Camera to Spatial Continuity on Vision Pro";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DABFEB7A2BD39AA900137B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpatialContinuityCamera/Preview Content\"";
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpatialContinuityCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to display a preview of Spatial Continuity Camera";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used for connecting Spatial Continuity Camera to Spatial Continuity on Vision Pro";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DABFEB7C2BD39AA900137B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpatialContinuityCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpatialContinuityCamera";
+			};
+			name = Debug;
+		};
+		DABFEB7D2BD39AA900137B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpatialContinuityCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpatialContinuityCamera";
+			};
+			name = Release;
+		};
+		DABFEB7F2BD39AA900137B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpatialContinuityCamera;
+			};
+			name = Debug;
+		};
+		DABFEB802BD39AA900137B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29BG4GH882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbhdk.SpatialContinuityCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpatialContinuityCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DABFEB2B2BD3999800137B32 /* Build configuration list for PBXProject "SpatialContinuity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFEB4B2BD3999900137B32 /* Debug */,
+				DABFEB4C2BD3999900137B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFEB4D2BD3999900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFEB4E2BD3999900137B32 /* Debug */,
+				DABFEB4F2BD3999900137B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFEB502BD3999900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFEB512BD3999900137B32 /* Debug */,
+				DABFEB522BD3999900137B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFEB782BD39AA900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFEB792BD39AA900137B32 /* Debug */,
+				DABFEB7A2BD39AA900137B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFEB7B2BD39AA900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFEB7C2BD39AA900137B32 /* Debug */,
+				DABFEB7D2BD39AA900137B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFEB7E2BD39AA900137B32 /* Build configuration list for PBXNativeTarget "SpatialContinuityCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFEB7F2BD39AA900137B32 /* Debug */,
+				DABFEB802BD39AA900137B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA20C2672C57A9A900996D3D /* XCRemoteSwiftPackageReference "SpeziLLM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StanfordSpezi/SpeziLLM.git";
+			requirement = {
+				branch = "image-payloads";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA20C2682C57A9A900996D3D /* SpeziLLMOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA20C2672C57A9A900996D3D /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMOpenAI;
+		};
+		DA8C4F632CA37777004C6DAA /* SpatialContinuityShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpatialContinuityShared;
+		};
+		DADD7BF92CA3326B0030DEE2 /* SpatialContinuityShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpatialContinuityShared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DABFEB282BD3999800137B32 /* Project object */;
+}

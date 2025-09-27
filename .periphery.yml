@@ -1,16 +1,24 @@
 #
-# This source file is part of the StanfordBDHG Template Application project
+# This source file is part of the Spatial Continuity project
 #
-# SPDX-FileCopyrightText: 2023 Stanford University
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
 #
 # SPDX-License-Identifier: MIT
 #
 
-project: TemplateApplication.xcodeproj
+project: SpatialContinuity.xcodeproj
 schemes:
-- TemplateApplication
+- SpatialContinuityCamera
+- SpatialContinuity
 targets:
-- TemplateApplication
-- TemplateApplicationTests
-- TemplateApplicationUITests
-- TemplateWatchApplication
+- SpatialContinuityCamera
+- SpatialContinuity
+report_exclude:
+- SpatialContinuityShared/**/*.swift
+# HACK: Is this the correct way to exclude external libraries from being checked?
+- "**/*SpeziLLM*/**/*.swift"
+disable_unused_import_analysis: true
+relative_results: true
+build_arguments:
+- -skipPackagePluginValidation
+- -skipMacroValidation

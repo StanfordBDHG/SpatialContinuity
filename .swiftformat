@@ -1,0 +1,35 @@
+#
+# This source file is part of the Spatial Continuity Project
+#
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+#
+# SPDX-License-Identifier: MIT
+# 
+
+--acronyms "ID,URL,UUID,SCC"
+--allman false
+--binarygrouping 4,8
+--commas inline
+--decimalgrouping 3,6
+--header \nThis source file is part of the Spatial Continuity project\n\nSPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)\n\nSPDX-License-Identifier: MIT\n
+--hexgrouping 4,8
+--hexliteralcase uppercase
+--indent 4
+--linebreaks lf
+--maxwidth 120
+--octalgrouping 4,8
+--semicolons "never"
+--swiftversion 6.0
+--trimwhitespace always
+--wrapparameters before-first
+--wrapcollections before-first
+--wrapconditions after-first
+
+# Rules
+--enable acronyms
+--enable blankLinesBetweenImports
+--enable isEmpty
+--enable wrapConditionalBodies
+--enable wrapMultilineConditionalAssignment
+--enable redundantProperty
+--disable wrapMultilineStatementBraces
