@@ -11,7 +11,7 @@
 --binarygrouping 4,8
 --commas inline
 --decimalgrouping 3,6
---header \nThis source file is part of the Spatial Continuity project\n\nSPDX-FileCopyrightText: 2024 Paul Heidekrüger\n\nSPDX-License-Identifier: MIT\n
+--header \nThis source file is part of the Spatial Continuity project\n\nSPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)\n\nSPDX-License-Identifier: MIT\n
 --hexgrouping 4,8
 --hexliteralcase uppercase
 --indent 4
