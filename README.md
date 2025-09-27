@@ -58,3 +58,13 @@ As part of this work, we made the following open source contributions:
 * https://github.com/StanfordSpezi/SpeziLLM/pull/64
 * https://github.com/StanfordSpezi/SpeziViews/pull/43
 * https://github.com/StanfordSpezi/SpeziLLM/pull/61
+
+
+## Contributing
+
+Contributions to this project are welcome. Please make sure to read the [contribution guidelines](https://github.com/StanfordBDHG/.github/blob/main/CONTRIBUTING.md) and the [contributor covenant code of conduct](https://github.com/StanfordBDHG/.github/blob/main/CODE_OF_CONDUCT.md) first.
+
+
+## License
+
+This project is licensed under the MIT License. See [Licenses](https://github.com/StanfordBDHG/PediatricAppleWatchStudy/tree/main/LICENSES) for more information.
