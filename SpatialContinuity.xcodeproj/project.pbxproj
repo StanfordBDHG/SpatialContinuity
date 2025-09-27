@@ -24,6 +24,7 @@
 		DABFEB5C2BD39AA800137B32 /* SCCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFEB5B2BD39AA800137B32 /* SCCView.swift */; };
 		DABFEB5E2BD39AA900137B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFEB5D2BD39AA900137B32 /* Assets.xcassets */; };
 		DABFEB612BD39AA900137B32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFEB602BD39AA900137B32 /* Preview Assets.xcassets */; };
+		DAD4939C2E881BE000F02F93 /* Localizable.xcstrings.license in Resources */ = {isa = PBXBuildFile; fileRef = DAD493992E881BE000F02F93 /* Localizable.xcstrings.license */; };
 		DAD7C43D2D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
 		DAD7C43E2D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
 		DAD7C43F2D92ACEF0075E175 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */; };
@@ -80,6 +81,23 @@
 		DABFEB602BD39AA900137B32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DABFEB662BD39AA900137B32 /* SpatialContinuityCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpatialContinuityCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABFEB702BD39AA900137B32 /* SpatialContinuityCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpatialContinuityCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD493552E881AC700F02F93 /* CONTRIBUTORS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTORS.md; sourceTree = "<group>"; };
+		DAD493562E881AC700F02F93 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DAD493572E881AC700F02F93 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		DAD493582E881AC700F02F93 /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
+		DAD493592E881AC700F02F93 /* ExportOptions.plist.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExportOptions.plist.license; sourceTree = "<group>"; };
+		DAD4935A2E881AC700F02F93 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		DAD4935B2E881AC700F02F93 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAD4935C2E881AC700F02F93 /* README.md.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md.license; sourceTree = "<group>"; };
+		DAD4935E2E881AC700F02F93 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		DAD4935F2E881AC700F02F93 /* MIT.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MIT.txt; sourceTree = "<group>"; };
+		DAD493992E881BE000F02F93 /* Localizable.xcstrings.license */ = {isa = PBXFileReference; lastKnownFileType = text; path = Localizable.xcstrings.license; sourceTree = "<group>"; };
+		DAD493BF2E881E0400F02F93 /* SC_Prototype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Prototype.png; sourceTree = "<group>"; };
+		DAD493C02E881E0400F02F93 /* tum-logo-dark-mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tum-logo-dark-mode.png"; sourceTree = "<group>"; };
+		DAD493C12E881E0400F02F93 /* tum-logo-light-mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tum-logo-light-mode.png"; sourceTree = "<group>"; };
+		DAD493C32E881E0400F02F93 /* beta-deployment.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "beta-deployment.yml"; sourceTree = "<group>"; };
+		DAD493C42E881E0400F02F93 /* build-and-test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-and-test.yml"; sourceTree = "<group>"; };
+		DAD493E02E88202600F02F93 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		DAD821D62C28B89200A6193B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DADD7BF82CA332490030DEE2 /* SpatialContinuityShared */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SpatialContinuityShared; sourceTree = "<group>"; };
@@ -141,6 +159,13 @@
 		DABFEB272BD3999800137B32 = {
 			isa = PBXGroup;
 			children = (
+				DAD493E02E88202600F02F93 /* README.md */,
+				DAD493C62E881E0400F02F93 /* .github */,
+				DAD493992E881BE000F02F93 /* Localizable.xcstrings.license */,
+				DAD493552E881AC700F02F93 /* CONTRIBUTORS.md */,
+				DAD4935D2E881AC700F02F93 /* fastlane */,
+				DAD4935E2E881AC700F02F93 /* LICENSE.md */,
+				DAD493602E881AC700F02F93 /* LICENSES */,
 				DAD7C43C2D92ACEF0075E175 /* Localizable.xcstrings */,
 				DADD7BF82CA332490030DEE2 /* SpatialContinuityShared */,
 				DABFEB322BD3999800137B32 /* SpatialContinuity */,
@@ -208,6 +233,56 @@
 				DABFEB602BD39AA900137B32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAD4935D2E881AC700F02F93 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493562E881AC700F02F93 /* .gitignore */,
+				DAD493572E881AC700F02F93 /* Appfile */,
+				DAD493582E881AC700F02F93 /* ExportOptions.plist */,
+				DAD493592E881AC700F02F93 /* ExportOptions.plist.license */,
+				DAD4935A2E881AC700F02F93 /* Fastfile */,
+				DAD4935B2E881AC700F02F93 /* README.md */,
+				DAD4935C2E881AC700F02F93 /* README.md.license */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		DAD493602E881AC700F02F93 /* LICENSES */ = {
+			isa = PBXGroup;
+			children = (
+				DAD4935F2E881AC700F02F93 /* MIT.txt */,
+			);
+			path = LICENSES;
+			sourceTree = "<group>";
+		};
+		DAD493C22E881E0400F02F93 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493BF2E881E0400F02F93 /* SC_Prototype.png */,
+				DAD493C02E881E0400F02F93 /* tum-logo-dark-mode.png */,
+				DAD493C12E881E0400F02F93 /* tum-logo-light-mode.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		DAD493C52E881E0400F02F93 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493C32E881E0400F02F93 /* beta-deployment.yml */,
+				DAD493C42E881E0400F02F93 /* build-and-test.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		DAD493C62E881E0400F02F93 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				DAD493C22E881E0400F02F93 /* assets */,
+				DAD493C52E881E0400F02F93 /* workflows */,
+			);
+			path = .github;
 			sourceTree = "<group>";
 		};
 		DAFE82FC2C3D73460089B221 /* Frameworks */ = {
@@ -375,6 +450,7 @@
 			files = (
 				DABFEB3F2BD3999800137B32 /* Preview Assets.xcassets in Resources */,
 				DABFEB3C2BD3999800137B32 /* Assets.xcassets in Resources */,
+				DAD4939C2E881BE000F02F93 /* Localizable.xcstrings.license in Resources */,
 				DAD7C43D2D92ACEF0075E175 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
