@@ -73,5 +73,5 @@ This project is the result of a collaboration between the Stanford Mussallem Cen
 
 ![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-light.png#gh-light-mode-only)
 ![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-dark.png#gh-dark-mode-only)
-![Technical University of Munich Logo](.github/assets/tum-logo-light-mode.png#gh-light-mode-only)
-![Technical University of Munich Logo](.github/assets/tum-logo-dark-mode.png#gh-dark-mode-only)
+<img src=".github/assets/tum-logo-light-mode.png#gh-light-mode-only" alt="Technical University of Munich Logo (Blue)" width="192" height="100">
+<img src=".github/assets/tum-logo-dark-mode.png#gh-dark-mode-only" alt="Technical University of Munich Logo (White)" width="179" height="100">
