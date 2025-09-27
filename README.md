@@ -19,6 +19,8 @@ Ultimately, this should lead to a truly continuous experience where the friction
 
 This implementation is part of our work on the "Spatial Continuity: Investigating Use Cases of Spatial Computing for Users with Low Vision" poster, which was accepted at the [27th International ACM SIGACCESS Conference on Computers and Accessibility](https://assets25.sigaccess.org/).
 
+![A screenshot from an Apple Vision Pro looking at a poster of the Utah Teapot and a copy of the book Gödel, Escher, Bach, both positioned beside each other on a flat surface. The person wearing the Vision Pro (and taking the screenshot) is holding an iPhone showing a full-screen viewfinder. The iPhone's camera feed is being livestreamed to the Spatial Continuity app on the Vision Pro, which is showing two windows in front of the user, above the poster and the book. One window is showing the livestream from the iPhone, with two additional menu items below, reading "Onboarding" and "Describe". The other window is showing a static pin (screenshot) from the cover of the Gödel, Escher, Bach book, which was taken from the iPhone's livestream to Spatial Continuity.](.github/assets/SC_Prototype.png)
+
 
 ## Functionality
 
