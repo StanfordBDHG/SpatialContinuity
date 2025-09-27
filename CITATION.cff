@@ -1,3 +1,11 @@
+#
+# This source file is part of the StanfordBDHG Template Application project
+#
+# SPDX-FileCopyrightText: 2023 Stanford University
+#
+# SPDX-License-Identifier: MIT
+#
+
 cff-version: 1.2.0
 message: "If you use this software or reference our publication, please cite it as below."
 title: "Spatial Continuity: Investigating Use Cases of Spatial Computing for Users with Low Vision"
