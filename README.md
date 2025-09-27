@@ -68,3 +68,15 @@ Contributions to this project are welcome. Please make sure to read the [contrib
 ## License
 
 This project is licensed under the MIT License. See [Licenses](https://github.com/StanfordBDHG/PediatricAppleWatchStudy/tree/main/LICENSES) for more information.
+
+
+## Our Research
+
+For more information, check out our website at [biodesigndigitalhealth.stanford.edu](https://biodesigndigitalhealth.stanford.edu).
+
+This project is the result of a collaboration between the Stanford Mussallem Center for Biodesign and the Technical University of Munich.
+
+![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-light.png#gh-light-mode-only)
+![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-dark.png#gh-dark-mode-only)
+![Technical University of Munich Logo](https://raw.githubusercontent.com/StanfordBDHG/SpatialContinuity/main/assets/tum-logo-light-mode.png#gh-light-mode-only)
+![Technical University of Munich Logo](https://raw.githubusercontent.com/StanfordBDHG/SpatialContinuity/main/assets/tum-logo-dark-mode.png#gh-dark-mode-only)
