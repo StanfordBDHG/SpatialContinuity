@@ -72,6 +72,7 @@ This project is licensed under the MIT License. See [Licenses](https://github.co
 For more information, check out our website at [biodesigndigitalhealth.stanford.edu](https://biodesigndigitalhealth.stanford.edu).
 
 This project is the result of a collaboration between the Stanford Mussallem Center for Biodesign and the Technical University of Munich.
+This work is part of a conference poster published at the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '25). The poster can be viewed at: [https://doi.org/10.1145/3663547.3759711](https://doi.org/10.1145/3663547.3759711).
 
 ![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-light.png#gh-light-mode-only)
 ![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-dark.png#gh-dark-mode-only)
