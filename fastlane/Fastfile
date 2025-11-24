@@ -5,6 +5,8 @@
 #
 # SPDX-License-Identifier: MIT
 #
+default_platform(:ios)
+
 platform :ios do
   before_all do
     ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "5"
@@ -13,93 +15,13 @@ platform :ios do
 
   desc "Build and test"
   lane :test do
+		test_vision_pro
     test_iphone
   end
 
   desc "Build and test for iPhone"
   lane :test_iphone do
     private_test_scc(devices: ["iPhone 15 Pro"], result: "iphone")
-  end
-
-  desc "Internal build and test lane for Spatial Continuity Camera"
-  private_lane :private_test_scc do |options|
-    run_tests(
-			project: "SpatialContinuity.xcodeproj",
-			scheme: "SpatialContinuityCamera",
-      skip_build: true,
-      derived_data_path: ".derivedData",
-      xcargs: [
-        "-skipPackagePluginValidation",
-        "-skipMacroValidation"
-      ],
-      code_coverage: true,
-      devices: options[:devices],
-      force_quit_simulator: true,
-      reset_simulator: true,
-      prelaunch_simulator: false,
-      concurrent_workers: 1,
-      max_concurrent_simulators: 1,
-      destination: options[:destination],
-      result_bundle: true,
-      output_directory: ".",
-      result_bundle_path: "./#{options[:result]}.xcresult",
-			build_for_testing: true
-    )
-  end
-
-  desc "CodeQL Spatial Continuity Camera"
-  lane :codeql_scc do
-    build_app(
-			project: "SpatialContinuity.xcodeproj",
-			scheme: "SpatialContinuityCamera",
-      skip_archive: true,
-      skip_codesigning: true,
-      derived_data_path: ".derivedData",
-      xcargs: [
-        "-skipPackagePluginValidation",
-        "-skipMacroValidation"
-      ]
-    )
-  end
-
-  desc "Build app"
-  lane :build_scc do
-    build_app(
-			project: "SpatialContinuity.xcodeproj",
-			scheme: "SpatialContinuityCamera",
-      derived_data_path: ".derivedData",
-      xcargs: [
-        "-skipPackagePluginValidation",
-        "-skipMacroValidation"
-      ],
-      destination: "generic/platform=iOS",
-      output_directory: ".build",
-      archive_path: ".build/SpatialContinuityCamera.xcarchive",
-    )
-    # This is an unfortunate workaround for a bug in fastlane: https://github.com/fastlane/fastlane/pull/21319
-    Dir.chdir("..") do
-      sh(
-        "
-        xcodebuild \
-          -exportArchive \
-          -exportOptionsPlist ./fastlane/ExportOptions.plist \
-          -archivePath ./.build/SpatialContinuityCamera.xcarchive \
-          -exportPath ./.build
-        "
-      )
-    end
-  end
-end
-
-platform :visionos do
-  before_all do
-    ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "5"
-    ENV["FASTLANE_XCODEBUILD_SETTINGS_RETRIES"] = "6"
-  end
-
-  desc "Build and test"
-  lane :test do
-		test_vision_pro
   end
 
   desc "Build and test for Vision Pro"
@@ -133,6 +55,33 @@ platform :visionos do
     )
   end
 
+
+  desc "Internal build and test lane for Spatial Continuity Camera"
+  private_lane :private_test_scc do |options|
+    run_tests(
+			project: "SpatialContinuity.xcodeproj",
+			scheme: "SpatialContinuityCamera",
+      skip_build: true,
+      derived_data_path: ".derivedData",
+      xcargs: [
+        "-skipPackagePluginValidation",
+        "-skipMacroValidation"
+      ],
+      code_coverage: true,
+      devices: options[:devices],
+      force_quit_simulator: true,
+      reset_simulator: true,
+      prelaunch_simulator: false,
+      concurrent_workers: 1,
+      max_concurrent_simulators: 1,
+      destination: options[:destination],
+      result_bundle: true,
+      output_directory: ".",
+      result_bundle_path: "./#{options[:result]}.xcresult",
+			build_for_testing: true
+    )
+  end
+
   desc "CodeQL Spatial Continuity"
   lane :codeql_sc do
     build_app(
@@ -141,6 +90,23 @@ platform :visionos do
       skip_archive: true,
       skip_codesigning: true,
       derived_data_path: ".derivedData",
+      destination: "generic/platform=visionOS",
+      xcargs: [
+        "-skipPackagePluginValidation",
+        "-skipMacroValidation"
+      ]
+    )
+  end
+
+  desc "CodeQL Spatial Continuity Camera"
+  lane :codeql_scc do
+    build_app(
+			project: "SpatialContinuity.xcodeproj",
+			scheme: "SpatialContinuityCamera",
+      skip_archive: true,
+      skip_codesigning: true,
+      derived_data_path: ".derivedData",
+      destination: "generic/platform=iOS",
       xcargs: [
         "-skipPackagePluginValidation",
         "-skipMacroValidation"
@@ -170,6 +136,34 @@ platform :visionos do
           -exportArchive \
           -exportOptionsPlist ./fastlane/ExportOptions.plist \
           -archivePath ./.build/SpatialContinuity.xcarchive \
+          -exportPath ./.build
+        "
+      )
+    end
+  end
+
+  desc "Build Spatial Continuity Camera"
+  lane :build_scc do
+    build_app(
+			project: "SpatialContinuity.xcodeproj",
+			scheme: "SpatialContinuityCamera",
+      derived_data_path: ".derivedData",
+      xcargs: [
+        "-skipPackagePluginValidation",
+        "-skipMacroValidation"
+      ],
+      destination: "generic/platform=iOS",
+      output_directory: ".build",
+      archive_path: ".build/SpatialContinuityCamera.xcarchive",
+    )
+    # This is an unfortunate workaround for a bug in fastlane: https://github.com/fastlane/fastlane/pull/21319
+    Dir.chdir("..") do
+      sh(
+        "
+        xcodebuild \
+          -exportArchive \
+          -exportOptionsPlist ./fastlane/ExportOptions.plist \
+          -archivePath ./.build/SpatialContinuityCamera.xcarchive \
           -exportPath ./.build
         "
       )
